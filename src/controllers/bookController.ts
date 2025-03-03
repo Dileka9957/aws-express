@@ -3,7 +3,8 @@ import { Book } from '../models/bookModel';
 
 let books: Book[] = [
   { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
-  { id: 2, title: '1984', author: 'George Orwelll' }
+  { id: 2, title: '1984', author: 'George Orwelll' },
+  { id: 3, title: 'Test 12', author: 'Test 45' }
 ];
 
 export const getBooks = (req: Request, res: Response) => {
