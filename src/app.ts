@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import bookRoutes from './routes/bookRoutes';
+import authorRoutes from './routes/authorRoutes';
 import { errorHandler } from './middleware/errorHandles';
 
 dotenv.config();
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 });
 // Routes
 app.use('/api/books', bookRoutes);
+app.use('/api/authors', authorRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
